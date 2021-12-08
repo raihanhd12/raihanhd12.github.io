@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		input{			
+			padding-right: 200px;
+			margin-left: 150px;
+			height: 20px;
+		}
+		h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      color: #DEB992;
+      }
+    h3{
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      color: #05F4B7;
+            
+      }
+		body{
+      background-color: #12151F;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      
+      }
+   td{
+      font-family: Arial, Helvetica, sans-serif;            
+      text-decoration: none;
+      color: white;      
+     }
+    fieldset{
+
+			border-color: #05F4B7; /* warna garis tepi */
+			box-shadow: 2px 2px 4px #333; /* bayangan */
+    }
+    select{
+    	 margin-left: 150px;
+    }
+   .ttl{
+     	color: red;
+    }
+   .kota{
+   	 height: 90px;
+   }
+   .alamat{
+   	height: 80px;
+   }
+   .sub{
+   	margin-top: 50px;
+   	margin-left: 160px;
+   	color: #12151F;
+   	height: 80px;
+   	width: 350px;
+   	border-width: 20px;
+   	border-color: #05F4B7;
+   	background-color: white;
+   	font-size: 24px;
+   }
+   .poli{
+   	margin-top: 60px;
+   	height: 400px;
+   	width: 650px;
+   }
+   .previous{
+   	font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #DEB992;  
+    margin-right: 900px;
+    margin-left: 300px;
+   }
+   .next{
+   	font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #DEB992;    
+   }
+	</style>
+	<title>Form Pendaftaran Anggota</title>
+	</head>
+	<body>
+		<fieldset>
+			<h2 align="center">FORMULIR PENDAFTARAN CALON SISWA BARU SMA</span></h2>
+		</fieldset>
+	<fieldset>
+	<h3 align="left">I. Biodata Siswa : </h3>
+	   
+		<table width="800" align="left" cellpadding="10">
+			 <form action="insertProsesTugas.php" method="GET">
+	          <tr>
+	              <td><label>A. No UN SMP/MTs/Sederajat</label></td><td><input type="text" name="no" /></td>
+		  </tr>
+		  <tr>
+		      <td><label>B. Nama Lengkap </label></td><td><input type="text" name="nama" /></td>
+		  </tr>
+		  <tr>
+		      <td>
+		      <label>C. Jenis kelamin:</label>
+		      <td>
+		      	  <label><input  type="radio" name="jk" value="laki-laki" /> Laki-laki </label>
+	            <label><input type="radio" name="jk" value="perempuan" /> Perempuan</label>
+		      </td>
+	     
+	          </td>
+		  </tr>
+		  <tr>
+		  	<td class="ttl">* Tempat, Tanggal lahir</td>
+		  	<td><input type="date" id="Test_DatetimeLocal" name="ttl"></td>
+		  </tr>
+		  <tr>
+	        <td><label>D. Nama OrangTua/Wali </label></td><td><input type="text" name="ortu"></td>
+		  </tr>
+		  <tr>
+		      <td><label>E. Alamat (<em> sesuai KK / KTP / Surat Ket. Domisil min. 6 bln Ortu/Wali murid calon siswa </em>) </label></td><td><input class="alamat" type="text" name="alamat"></td>
+		  </tr>
+		  <tr>
+		      <td><label class="ttl">* Email</label></td><td><input type="email" name="email"></td>
+		  </tr>
+		  <tr>
+		      <td><label class="ttl">* No. Telp./HP.</label></td><td><input type="text" name="notelp"></td>
+		  </tr>
+		  <tr>
+		      <td><label>F. Kota / Kabupaten <br> (<em>tulis Banyumas jika dari Kab. Bms, jika berasal dari Luar Kab Bms. tulis nama Kota/Kab. asal</em>)</label></td><td><input class="kota" type="text" name="kota"></td>
+		   </tr>
+		 	 <tr>
+		      <td><label>G. Asal Sekolah</label></td><td><input type="text" name="asal"></td>
+		   </tr>  
+		   	<tr>
+		      <td><label>H. Agama</label></td>
+		      <td>
+		      	<select name="agama">      
+				      <option>Islam</option>
+				     	<option>Hindu</option>
+				      <option>Buddha</option>
+				      <option>Kristen</option>
+				      <option>Katolik</option>
+				      <option>Khonghucu</option>      
+      			</select>
+      		
+      		</td>
+      </td>
+
+		   </tr>
+   
+		</table>
+			      <button class="sub" type="submit" name="kirim" value="Kirim"><b>Submit</b></button>	  
+	    </form>
+	   	 <img class="poli" src="polinema.jpg">     
+	    </fieldset>
+
+	</body>
+	<fieldset>
+		    <br><br><br>
+        <a href="http://localhost/dasarWeb/praktik_php/latihanBootstrap/navbarTugas.html" class="previous">&laquo; Kembali Ke Menu Utama</a>
+        <a href="http://localhost/dasarWeb/praktik_php/loginFormTugas.html" class="next">Halaman Login &raquo;</a>
+	</fieldset>
+</html>

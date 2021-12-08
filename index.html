@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halaman</title>
+  <!-- Menyisipkan Bootstrap-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    :root {
+      --htmlFontSize: 100%;
+      --bodyBackgroundColor: #12151F;
+      --bodyColor: var(--baseColor);
+      --bodyFontFamily: "Open Sans";
+      --bodyFontFamilyFallback: sans-serif;
+      --bodyFontSize: 0.875rem;
+      --bodyFontWeight: 400;
+      --bodyLineHeight: 1.5;
+    }
+  body {
+      background-color: var(--bodyBackgroundColor);
+      color: var(--bodyColor);
+      font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+      font-size: var(--bodyFontSize);
+      font-weight: var(--bodyFontWeight);
+      line-height: var(--bodyLineHeight);
+      margin: 0;
+      min-block-size: 100vh;
+    }  
+  .jumbotron{
+      text-align: center;
+      color: #05F4B7;
+      background-color: var(--bodyBackgroundColor);
+  }
+  button{    
+    margin-left: 30px;
+  }
+  img{
+    display:block;
+    margin:auto;
+    border-radius: 12px;
+  }
+  h1{
+    font-family: vladimir script;
+    font-size: 60px;
+  }
+  p{
+    color: antiquewhite;
+    font-size: 23px;
+    text-align: center;
+  }
+  #oi{
+    color: #05F4B7;
+    font-family: optima;
+    font-size: 24px;
+  }
+  #haha{
+    color: #05F4B7;
+    font-family: Brush Script MT;
+    font-size: 100px;
+  }
+  </style>
+</head>
+<body>
+  <div class="col">
+    <img src="img1.jpg" class="img-fluid" alt="gambar thumbnail">
+    </div>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+        <button id = "oi" type="button" class="btn btn-outline-success">HOME
+          <a class="nav-link text" href="http://localhost/dasarWeb/praktik_php/latihanBootstrap/navbarTugas.html">Kembali Ke Menu Utama</a>
+          </button> 
+          <button id = "oi" type="button" class="btn btn-outline-success">HALAMAN LOGIN
+            <a class="nav-link text" href="http://localhost/dasarWeb/praktik_php/loginFormTugas.html">Login Pendaftar / Admin</a>
+            </button>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a id = "haha" class="navbar-brand mx-auto" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            </button>
+            <button id = "oi" type="button" class="btn btn-outline-success">TENTANG SAYA
+              <a class="nav-link text" href="http://localhost/dasarWeb/uts/resume-main/aboutUs.html">Biodata Pembuat Web</a>
+            </button> 
+        </ul>
+    </div>
+</nav>
+
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Selamat Datang</h1>
+        <p>~ Hari ini kamu melakukan apa yang tidak dilakukan orang lain. Maka besok kamu akan dapat melakukan hal yang tidak dapat dilakukan orang lain ~</p>
+      </div>
+      </div>
+</body>
+</html>
